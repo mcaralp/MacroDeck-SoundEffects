@@ -2,9 +2,9 @@
   "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
   "manifestVersion": 1,
   "id": "fr.mcaralp.sound-effects",
-  "name": "SoundEffects",
+  "name": "Sound Effects",
   "version": "1.0.0",
-  "description": "Plays sound effects in Macro Deck.",
+  "description": "Play audio files as sound effects in Macro Deck.",
   "icon": "Assets/icon.svg",
   "entrypoints": {
     "win-x64": {
