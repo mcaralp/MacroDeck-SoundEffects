@@ -17,16 +17,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Actions.PlaySound.Name" xml:space="preserve">
-    <value>Play Sound</value>
+    <value>Play a Sound</value>
   </data>
   <data name="Actions.PlaySound.Description" xml:space="preserve">
-    <value>Plays a sound file.</value>
+    <value>Plays a sound from the specified file.</value>
   </data>
   <data name="Actions.PlaySound.File.Label" xml:space="preserve">
     <value>File</value>
   </data>
   <data name="Actions.PlaySound.File.Description" xml:space="preserve">
-    <value>The sound file to play.</value>
+    <value>The sound file to play. Supported formats: MP3, FLAC, PCM/ADPCM WAV, AAC, ALAC, MP4/M4A, OGG/Vorbis, and AIFF.</value>
   </data>
   <data name="Actions.PlaySound.File.Placeholder" xml:space="preserve">
     <value>Choose a sound file</value>
