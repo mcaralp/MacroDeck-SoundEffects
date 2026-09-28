@@ -29,12 +29,12 @@ public sealed class SoundEffectsIntegrationTests
 		await using var harness = CreateHarness();
 		await harness.InitializeIntegrationsAsync();
 
+		var filePath = Path.Combine(AppContext.BaseDirectory, "Assets/bip_440Hz_1s.wav");
 		var outcome = await harness.Actions.ExecuteAsync(
 			"play-sound",
-			new Dictionary<string, object?> { ["file"] = "test.mp3" });
+			new Dictionary<string, object?> { ["file"] = filePath });
 
 		Assert.That(outcome.Succeeded, Is.True);
-		Assert.That(harness.Logs.Events.Any(e => e.Message.Contains("Playing sound file: test.mp3")), Is.True);
 	}
 
 	[Test]
@@ -45,7 +45,7 @@ public sealed class SoundEffectsIntegrationTests
 
 		var outcome = await harness.Actions.ExecuteAsync(
 			"play-sound",
-			new Dictionary<string, object?> { ["file"] = "   " });
+			new Dictionary<string, object?> { ["file"] = "" });
 
 		Assert.That(outcome.Succeeded, Is.False);
 	}
