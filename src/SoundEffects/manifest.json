@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.macro-deck.app/plugin-manifest-v1.schema.json",
+  "manifestVersion": 1,
+  "id": "fr.mcaralp.sound-effects",
+  "name": "SoundEffects",
+  "version": "1.0.0",
+  "description": "Plays sound effects in Macro Deck.",
+  "icon": "Assets/icon.svg",
+  "entrypoints": {
+    "win-x64": {
+      "executable": "runtimes/win-x64/SoundEffects.exe"
+    },
+    "osx-arm64": {
+      "executable": "runtimes/osx-arm64/SoundEffects"
+    },
+    "linux-x64": {
+      "executable": "runtimes/linux-x64/SoundEffects"
+    }
+  },
+  "publisher": {
+    "name": "Mathieu caralp"
+  },
+  "license": "MIT",
+  "compatibility": {
+    "macroDeck": ">=3.0.0"
+  }
+}
